@@ -1,0 +1,27 @@
+# Universal Weight Calculator
+# This Program Takes A Users Weight In Any Metric And Converts It To The Desired Output
+# Introductory Print Statement
+print("Hello User! Welcome To The Universal Weight Calculator")
+# User Name Input
+user = input("Please Enter Your Name: ")
+# User Input Of Weight
+mass = input("Enter Your Weight: ")
+# User Input Metric Of Choice
+# User Input Restricted For One Of Two Choices K For Kilograms Or KGS
+# User Input Restricted For Two Of Two Choices L For Pounds Or LBS
+metric = input("Enter (k) for Kilograms or (l) for Pounds ").lower()
+# If Statement Used For Conditional Boolean
+if metric == "k":
+    # Print Statement So User Knows What Metric They Are Starting With
+    print(user + " You Have Selected KGS Hence Your Weight Will Be Converted To LBS")
+    # Conversion Into Pounds
+    convert_lbs = int(mass) * 2.205
+    # Print Statement Final Converted Weight
+    print(user + f" your weight in Pounds is: {convert_lbs} Lbs ")
+else:
+    # Print Statement So User Knows What Metric They Are Starting With
+    print(user + " You Have Selected LBS Hence Your Weight Will Be Converted To KGS")
+    # Conversion Into Kilograms
+    convert_kgs = int(mass) / 2.205
+    # Print Statement Final Converted Weight
+    print(user + f" your weight in Kilograms is: {convert_kgs} Kgs")
